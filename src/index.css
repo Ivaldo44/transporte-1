@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-primary: #075618; /* Cedro Green */
+  --color-brand-accent: #F29222;  /* Cedro Orange */
+  --color-surface: #ffffff;
+  --color-background: #ffffff;
+  --color-text-main: #111111;
+  --color-text-muted: #666666;
+  --color-border: #E8E7E7;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased bg-background text-text-main;
+  }
+}
+
+@layer components {
+  .card-cedro {
+    @apply bg-surface border border-border rounded-xl shadow-sm;
+  }
+  
+  .btn-primary-cedro {
+    @apply px-4 py-2 bg-brand-primary text-white text-sm font-medium rounded-lg shadow-md hover:bg-[#064a15] transition-all active:scale-95 disabled:opacity-50;
+  }
+  
+  .btn-accent-cedro {
+    @apply px-4 py-2 bg-brand-accent text-white text-sm font-medium rounded-lg shadow-md hover:bg-[#d97f17] transition-all active:scale-95;
+  }
+}
