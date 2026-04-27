@@ -1,0 +1,6 @@
+{
+  "name": "Laboratório Cedro - Extrator de Peças",
+  "description": "Sistema especializado para extração de dados de laudos e peças do Laboratório Cedro, com integração ao banco de dados, exportação Excel e dashboard estratégico para gestão de manutenção.",
+  "requestFramePermissions": [],
+  "majorCapabilities": []
+}
